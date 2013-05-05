@@ -42,11 +42,54 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Cirrious.CrossCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e16445fd9b451819, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Cirrious.CrossCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.CrossCore.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Cirrious.CrossCore.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e16445fd9b451819, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Cirrious.MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Binding, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Cirrious.MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Binding.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Cirrious.MvvmCross.Binding.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Cirrious.MvvmCross.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Droid.Fragging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Cirrious.MvvmCross.Droid.Fragging.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Localization">
+      <HintPath>..\Binaries\Cirrious.MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Cirrious.MvvmCross.Plugins.Json, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Cirrious.MvvmCross.Plugins.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="Mono.Android.Support.v4" />
     <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Binaries\System.Windows.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -84,42 +127,6 @@
     <AndroidResource Include="Resources\Drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\external\MvvmCross\Cirrious\Cirrious.MvvmCross.Binding.Droid\Cirrious.MvvmCross.Binding.Droid.csproj">
-      <Project>{47fd89c3-19dc-4bd2-9b6d-fb8363be7eb9}</Project>
-      <Name>Cirrious.MvvmCross.Binding.Droid</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\external\MvvmCross\Cirrious\Cirrious.MvvmCross.Binding\Cirrious.MvvmCross.Binding.csproj">
-      <Project>{64dcd397-9019-41e8-a928-e5f5c5df185b}</Project>
-      <Name>Cirrious.MvvmCross.Binding</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\external\MvvmCross\Cirrious\Cirrious.MvvmCross.Droid.Fragging\Cirrious.MvvmCross.Droid.Fragging.csproj">
-      <Project>{5b74f15e-e377-4662-9636-4233049eddc3}</Project>
-      <Name>Cirrious.MvvmCross.Droid.Fragging</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\external\MvvmCross\Cirrious\Cirrious.MvvmCross.Droid\Cirrious.MvvmCross.Droid.csproj">
-      <Project>{7a6be137-d0f1-46a1-ae5c-81faeedddf02}</Project>
-      <Name>Cirrious.MvvmCross.Droid</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\external\MvvmCross\Cirrious\Cirrious.MvvmCross\Cirrious.MvvmCross.csproj">
-      <Project>{b6e27475-e7d0-448c-a5cc-5097dca1e2dd}</Project>
-      <Name>Cirrious.MvvmCross</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\external\MvvmCross\CrossCore\Cirrious.CrossCore.Droid\Cirrious.CrossCore.Droid.csproj">
-      <Project>{caf8935f-56fe-4485-9d34-4a38fe79f6c9}</Project>
-      <Name>Cirrious.CrossCore.Droid</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\external\MvvmCross\CrossCore\Cirrious.CrossCore\Cirrious.CrossCore.csproj">
-      <Project>{cff6f25a-3c3b-44ee-a54c-2ed4aaff3adb}</Project>
-      <Name>Cirrious.CrossCore</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\external\MvvmCross\Plugins\Cirrious\Json\Cirrious.MvvmCross.Plugins.Json\Cirrious.MvvmCross.Plugins.Json.csproj">
-      <Project>{d518e8e6-3ce6-4706-a286-e8bc6a2f64dc}</Project>
-      <Name>Cirrious.MvvmCross.Plugins.Json</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\external\MvvmCross\PortableSupport\System.Windows\System.Windows.Droid.csproj">
-      <Project>{72d13ee1-53a3-4a9f-9281-ae44cc5e92ac}</Project>
-      <Name>System.Windows.Droid</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TestFragment.Core\TestFragment.Core.csproj">
       <Project>{6379b116-95d7-43b3-94b6-d0b23c1d8ffc}</Project>
       <Name>TestFragment.Core</Name>
