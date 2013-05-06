@@ -8,7 +8,7 @@ Test using Fragment with MvvmCross & ViewPagerIndicator
 License
 =======
 
-    Copyright 2012 Hugo Terelle
+    Copyright 2013 Hugo Terelle
 	This project is developed and distributed under Ms-Pl - see http://opensource.org/licenses/ms-pl.html
 	
 	Using MvvmCross - See https://github.com/slodge/MvvmCross for Licence
