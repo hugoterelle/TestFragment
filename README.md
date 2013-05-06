@@ -1,5 +1,6 @@
 TestFragment
 ============
+UNDER DEVELOPMENT!!!
 
 Test using Fragment with MvvmCross & ViewPagerIndicator
 
