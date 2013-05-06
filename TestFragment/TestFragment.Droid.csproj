@@ -133,12 +133,15 @@
       <Name>TestFragment.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\ViewPagerIndicator.Droid\ViewPagerIndicator.Droid.csproj">
-      <Project>{7DBB434B-78E8-4AB7-A6FF-E3272BE5DD11}</Project>
+      <Project>{7dbb434b-78e8-4ab7-a6ff-e3272be5dd11}</Project>
       <Name>ViewPagerIndicator.Droid</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\MvxBindingAttributes.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\styles.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Drawable\" />

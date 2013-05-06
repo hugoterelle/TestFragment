@@ -122,9 +122,10 @@ namespace ViewPagerIndicator.Droid
 		{
 			//Workaround for not being able to pass a defStyle on pre-3.0
 			var tabView = (TabView)mInflater.Inflate (Resource.Layout.vpi__tab, null);
-			tabView.Init (this, text, index);
-			tabView.Focusable = true;
-			tabView.Click += delegate(object sender, EventArgs e) {
+            tabView.Init(this, text, index);
+            tabView.Focusable = true;
+            tabView.Click += delegate(object sender, EventArgs e)
+            {
 				var tView = (TabView)sender;
 				
 				mViewPager.CurrentItem = tView.GetIndex ();

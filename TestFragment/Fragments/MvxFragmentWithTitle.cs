@@ -1,7 +1,5 @@
-using System.Text;
 using Android.OS;
 using Android.Views;
-using Android.Widget;
 using Cirrious.MvvmCross.Binding.Droid.BindingContext;
 using Cirrious.MvvmCross.Droid.Fragging.Fragments;
 
@@ -18,19 +16,10 @@ namespace TestFragment.Droid.Fragments
             _resourceId = resourceId;
         }
 
-        public MvxFragmentWithTitle(int resourceId, string content)
+        public MvxFragmentWithTitle(int resourceId, string title)
             : this(resourceId)
         {
-            var builder = new StringBuilder();
-            for (var i = 0; i < 20; i++)
-            {
-                if (i != 19)
-                    builder.Append(content).Append(" ");
-                else
-                    builder.Append(content);
-            }
-            Title = builder.ToString();
-
+            Title = title;
         }
 
         public override void OnSaveInstanceState(Bundle outState)
@@ -50,29 +39,8 @@ namespace TestFragment.Droid.Fragments
                 Title = savedInstanceState.GetString(KeyContent);
             }
 
-            // Text
-            var text = new TextView(Activity)
-                {
-                    Gravity = GravityFlags.Center,
-                    Text = Title,
-                    TextSize = (20 * Resources.DisplayMetrics.Density)
-                };
-            text.SetPadding(20, 20, 20, 20);
-
             // Content
-            var view = this.BindingInflate(_resourceId, null);
-
-            // Layout encapsulating Text & Content
-            var layout = new LinearLayout(Activity)
-                {
-                    LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MatchParent, ViewGroup.LayoutParams.MatchParent)
-                };
-            layout.SetGravity(GravityFlags.Center);
-
-            layout.AddView(text);
-            layout.AddView(view);
-
-            return layout;
+            return this.BindingInflate(_resourceId, null);
         }
     }
 }

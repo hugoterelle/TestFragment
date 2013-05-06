@@ -16,7 +16,7 @@ namespace TestFragment.Droid.Fragments
             _count = _fragments.Count;
         }
 
-        public override Fragment GetItem(int position)
+        public override Android.Support.V4.App.Fragment GetItem(int position)
         {
             return _fragments[position];
         }
