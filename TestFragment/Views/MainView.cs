@@ -17,7 +17,7 @@ namespace TestFragment.Droid.Views
 
         private FragmentTextAdapter _adapter;
         private ViewPager _pager;
-        private TabPageIndicator _indicator;
+        private PageIndicator _indicator;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -37,7 +37,7 @@ namespace TestFragment.Droid.Views
             _pager = FindViewById<ViewPager>(Resource.Id.pager);
             _pager.Adapter = _adapter;
 
-            _indicator = FindViewById<TabPageIndicator>(Resource.Id.indicator);
+            _indicator = FindViewById<TitlePageIndicator>(Resource.Id.indicator);
             _indicator.SetViewPager(_pager);
         }
 
