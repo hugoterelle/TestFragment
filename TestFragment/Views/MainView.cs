@@ -28,7 +28,7 @@ namespace TestFragment.Droid.Views
             _fragments = new List<MvxFragmentWithTitle>
                 {
                     new Tab1Fragment() {ViewModel = ViewModel},
-                    new Tab3Fragment() {ViewModel = ViewModel},
+                    new Tab2Fragment() {ViewModel = ViewModel},
                     new Tab3Fragment() {ViewModel = ViewModel}
                 };
 
