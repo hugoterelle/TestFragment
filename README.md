@@ -12,7 +12,7 @@ License
 	This project is developed and distributed under Ms-Pl - see http://opensource.org/licenses/ms-pl.html
 	
 	Using MvvmCross - See https://github.com/slodge/MvvmCross for Licence
-	Using ViewPagerIndicator - See http://www.apache.org/licenses/LICENSE-2.0 for Licence
+	Using ViewPagerIndicator - See https://github.com/xamarin/monodroid-samples/tree/master/ViewPagerIndicator for Licence
 	
 	
 	
