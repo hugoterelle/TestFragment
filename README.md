@@ -1,7 +1,7 @@
 TestFragment
 ============
 
-Test using Fragment with MvvmCross
+Test using Fragment with MvvmCross & ViewPagerIndicator
 
 
 License
