@@ -9,6 +9,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="Click on Page 1"
-    local:MvxBind="Click CommandButton1Click"/>
+    local:MvxBind="Click CommandClick"/>
 
 </LinearLayout>

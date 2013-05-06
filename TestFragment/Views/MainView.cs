@@ -4,6 +4,7 @@ using Android.OS;
 using Android.Support.V4.View;
 using Cirrious.MvvmCross.Droid.Fragging;
 using TestFragment.Core.ViewModels;
+using TestFragment.Core.ViewModels.Tabs;
 using TestFragment.Droid.Fragments;
 using TestFragment.Droid.Views.Tabs;
 using ViewPagerIndicator.Droid;
@@ -27,14 +28,14 @@ namespace TestFragment.Droid.Views
 
             _fragments = new List<MvxFragmentWithTitle>
                 {
-                    new Tab1Fragment() {ViewModel = ViewModel},
-                    new Tab2Fragment() {ViewModel = ViewModel},
-                    new Tab3Fragment() {ViewModel = ViewModel},
-                    new Tab3Fragment() {ViewModel = ViewModel},
-                    new Tab3Fragment() {ViewModel = ViewModel},
-                    new Tab3Fragment() {ViewModel = ViewModel},
-                    new Tab3Fragment() {ViewModel = ViewModel},
-                    new Tab3Fragment() {ViewModel = ViewModel}
+                    new Tab1Fragment(),
+                    new Tab2Fragment(),
+                    new Tab3Fragment(),
+                    new Tab3Fragment(),
+                    new Tab3Fragment(),
+                    new Tab3Fragment(),
+                    new Tab3Fragment(),
+                    new Tab3Fragment()
                 };
 
             _adapter = new FragmentTextAdapter(SupportFragmentManager, _fragments);
