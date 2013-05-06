@@ -1,8 +1,8 @@
 TestFragment
 ============
-UNDER DEVELOPMENT!!!
-
 Test using Fragment with MvvmCross & ViewPagerIndicator
+
+Using TitlePageIndicator is working while using TabPageIndicator is not (still working on it)
 
 
 License
