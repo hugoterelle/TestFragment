@@ -1,3 +1,4 @@
+using System;
 using Android.OS;
 using Android.Views;
 using Cirrious.MvvmCross.Binding.Droid.BindingContext;
@@ -28,8 +29,22 @@ namespace TestFragment.Droid.Fragments
             outState.PutString(KeyContent, Title);
         }
 
+        public override void OnDestroy()
+        {
+            Console.WriteLine("OnDestroyView from Fragment");
+            base.OnDestroy();
+        }
+
+        public override void OnPause()
+        {
+            Console.WriteLine("OnPauseView from Fragment");
+            base.OnPause();
+        }
+
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
+            Console.WriteLine("OnCreateView from Fragment");
+
             // Why?
             base.OnCreateView(inflater, container, savedInstanceState);
 

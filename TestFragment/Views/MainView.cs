@@ -29,6 +29,11 @@ namespace TestFragment.Droid.Views
                 {
                     new Tab1Fragment() {ViewModel = ViewModel},
                     new Tab2Fragment() {ViewModel = ViewModel},
+                    new Tab3Fragment() {ViewModel = ViewModel},
+                    new Tab3Fragment() {ViewModel = ViewModel},
+                    new Tab3Fragment() {ViewModel = ViewModel},
+                    new Tab3Fragment() {ViewModel = ViewModel},
+                    new Tab3Fragment() {ViewModel = ViewModel},
                     new Tab3Fragment() {ViewModel = ViewModel}
                 };
 

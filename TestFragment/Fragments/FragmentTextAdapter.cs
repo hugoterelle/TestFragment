@@ -1,10 +1,12 @@
 using System.Collections.Generic;
+using System.Diagnostics;
 using Android.Support.V4.App;
+using Cirrious.MvvmCross.ViewModels;
 using ViewPagerIndicator.Droid;
 
 namespace TestFragment.Droid.Fragments
 {
-    public class FragmentTextAdapter : FragmentPagerAdapter, TitleProvider
+    public class FragmentTextAdapter : FragmentStatePagerAdapter, TitleProvider
     {
         private readonly List<MvxFragmentWithTitle> _fragments;
         private int _count;
@@ -18,6 +20,7 @@ namespace TestFragment.Droid.Fragments
 
         public override Android.Support.V4.App.Fragment GetItem(int position)
         {
+            Debug.WriteLine("GetItem: Fragment=" + position);
             return _fragments[position];
         }
 
