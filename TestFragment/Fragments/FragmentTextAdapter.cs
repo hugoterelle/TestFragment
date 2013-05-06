@@ -1,17 +1,19 @@
 using System.Collections.Generic;
 using Android.Support.V4.App;
-using ViewPagerIndicator;
+using ViewPagerIndicator.Droid;
 
 namespace TestFragment.Droid.Fragments
 {
-    public class FragmentTextAdapter : TestFragmentAdapter, TitleProvider
+    public class FragmentTextAdapter : FragmentPagerAdapter, TitleProvider
     {
         private readonly List<MvxFragmentWithTitle> _fragments;
+        private int _count;
 
         public FragmentTextAdapter(FragmentManager fm, List<MvxFragmentWithTitle> fragments)
             : base(fm)
         {
             _fragments = fragments;
+            _count = _fragments.Count;
         }
 
         public override Fragment GetItem(int position)
@@ -23,7 +25,7 @@ namespace TestFragment.Droid.Fragments
         {
             get
             {
-                return _fragments.Count;
+                return _count;
             }
         }
 
@@ -31,5 +33,14 @@ namespace TestFragment.Droid.Fragments
         {
             return _fragments[position].Title;
         }
+
+		public void SetCount (int count)
+		{
+			if (count > 0 && count <= 10) 
+            {
+				_count = count;
+				NotifyDataSetChanged();
+			}
+		}
     }
 }

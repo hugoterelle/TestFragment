@@ -5,7 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFragment.Droid", "TestF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFragment.Core", "TestFragment.Core\TestFragment.Core.csproj", "{6379B116-95D7-43B3-94B6-D0B23C1D8FFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewPagerIndicator", "ViewPagerIndicator\ViewPagerIndicator\ViewPagerIndicator.csproj", "{10BE6857-6A09-448A-A52E-C0AC31CAFD9D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewPagerIndicator.Droid", "ViewPagerIndicator.Droid\ViewPagerIndicator.Droid.csproj", "{7DBB434B-78E8-4AB7-A6FF-E3272BE5DD11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +23,10 @@ Global
 		{6379B116-95D7-43B3-94B6-D0B23C1D8FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6379B116-95D7-43B3-94B6-D0B23C1D8FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6379B116-95D7-43B3-94B6-D0B23C1D8FFC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{10BE6857-6A09-448A-A52E-C0AC31CAFD9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{10BE6857-6A09-448A-A52E-C0AC31CAFD9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{10BE6857-6A09-448A-A52E-C0AC31CAFD9D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{10BE6857-6A09-448A-A52E-C0AC31CAFD9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{10BE6857-6A09-448A-A52E-C0AC31CAFD9D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{10BE6857-6A09-448A-A52E-C0AC31CAFD9D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7DBB434B-78E8-4AB7-A6FF-E3272BE5DD11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DBB434B-78E8-4AB7-A6FF-E3272BE5DD11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DBB434B-78E8-4AB7-A6FF-E3272BE5DD11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DBB434B-78E8-4AB7-A6FF-E3272BE5DD11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

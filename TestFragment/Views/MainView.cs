@@ -6,7 +6,7 @@ using Cirrious.MvvmCross.Droid.Fragging;
 using TestFragment.Core.ViewModels;
 using TestFragment.Droid.Fragments;
 using TestFragment.Droid.Views.Tabs;
-using ViewPagerIndicator;
+using ViewPagerIndicator.Droid;
 
 namespace TestFragment.Droid.Views
 {

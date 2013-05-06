@@ -16,6 +16,10 @@
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AssemblyName>ViewPagerIndicator</AssemblyName>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
+    <AndroidSupportedAbis>armeabi%3barmeabi-v7a%3bx86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -64,10 +68,9 @@
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
-    <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\values\strings.xml" />
     <AndroidResource Include="Resources\layout\vpi__tab.xml" />
     <AndroidResource Include="Resources\values\vpi__attrs.xml" />
     <AndroidResource Include="Resources\values\vpi__colors.xml" />
@@ -94,8 +97,6 @@
     <AndroidResource Include="Resources\drawable\vpi__tab_indicator.xml" />
     <AndroidResource Include="Resources\color\vpi__dark_theme.xml" />
     <AndroidResource Include="Resources\color\vpi__light_theme.xml" />
-    <AndroidResource Include="Resources\menu\menu.xml" />
-    <AndroidResource Include="Resources\layout\simple_tabs.xml" />
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\drawable\custom_tab_indicator.xml" />
     <AndroidResource Include="Resources\drawable-hdpi\custom_tab_indicator_focused.9.png" />
@@ -116,13 +117,6 @@
     <AndroidResource Include="Resources\drawable-xhdpi\custom_tab_indicator_unselected.9.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\custom_tab_indicator_unselected_focused.9.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\custom_tab_indicator_unselected_pressed.9.png" />
-    <AndroidResource Include="Resources\layout\simple_circles.xml" />
-    <AndroidResource Include="Resources\layout\simple_circles_vertical.xml" />
-    <AndroidResource Include="Resources\layout\simple_titles.xml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\themed_circles.xml" />
-    <AndroidResource Include="Resources\layout\themed_titles.xml" />
     <AndroidResource Include="Resources\drawable-ldpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
@@ -130,5 +124,7 @@
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Resources\menu\" />
+  </ItemGroup>
 </Project>

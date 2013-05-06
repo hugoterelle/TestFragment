@@ -128,20 +128,20 @@
     <AndroidResource Include="Resources\Values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Drawable\Icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\TestFragment.Core\TestFragment.Core.csproj">
       <Project>{6379b116-95d7-43b3-94b6-d0b23c1d8ffc}</Project>
       <Name>TestFragment.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ViewPagerIndicator\ViewPagerIndicator\ViewPagerIndicator.csproj">
-      <Project>{10be6857-6a09-448a-a52e-c0ac31cafd9d}</Project>
-      <Name>ViewPagerIndicator</Name>
+    <ProjectReference Include="..\ViewPagerIndicator.Droid\ViewPagerIndicator.Droid.csproj">
+      <Project>{7DBB434B-78E8-4AB7-A6FF-E3272BE5DD11}</Project>
+      <Name>ViewPagerIndicator.Droid</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Values\MvxBindingAttributes.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Drawable\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
