@@ -30,7 +30,7 @@ namespace TestFragment.Core.ViewModels
         {
             get
             {
-                return new MvxCommand(() => Debug.WriteLine("Button1 Click"));
+                return new MvxCommand(() => Debug.WriteLine("Button2 Click"));
             }
         }
 
@@ -38,7 +38,7 @@ namespace TestFragment.Core.ViewModels
         {
             get
             {
-                return new MvxCommand(() => Debug.WriteLine("Button1 Click"));
+                return new MvxCommand(() => Debug.WriteLine("Button3 Click"));
             }
         }
     }
