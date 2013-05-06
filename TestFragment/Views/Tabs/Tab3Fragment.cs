@@ -1,16 +1,12 @@
-using Android.OS;
-using Android.Views;
-using Cirrious.MvvmCross.Binding.Droid.BindingContext;
-using Cirrious.MvvmCross.Droid.Fragging.Fragments;
+using TestFragment.Droid.Fragments;
 
 namespace TestFragment.Droid.Views.Tabs
 {
-    public class Tab3Fragment : MvxFragment
+    public class Tab3Fragment : MvxFragmentWithTitle
     {
-        public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+        public Tab3Fragment()
+            : base(Resource.Layout.Page3, "MyTab3")
         {
-            base.OnCreateView(inflater, container, savedInstanceState);
-            return this.BindingInflate(Resource.Layout.Page3, null);
         }
     }
 }

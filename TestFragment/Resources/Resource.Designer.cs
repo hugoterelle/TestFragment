@@ -68,8 +68,11 @@ namespace TestFragment.Droid
 			// aapt resource value: 0x7f040000
 			public const int MvxBindingTagUnique = 2130968576;
 			
-			// aapt resource value: 0x01010000
-			public const int actualtabcontent = 16842752;
+			// aapt resource value: 0x7f040001
+			public const int indicator = 2130968577;
+			
+			// aapt resource value: 0x7f040002
+			public const int pager = 2130968578;
 			
 			private Id()
 			{
