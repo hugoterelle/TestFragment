@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using Android.Support.V4.App;
-using Cirrious.MvvmCross.ViewModels;
 using ViewPagerIndicator.Droid;
 
 namespace TestFragment.Droid.Fragments
